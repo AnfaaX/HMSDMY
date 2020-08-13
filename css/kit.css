@@ -1,0 +1,185 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  letter-spacing: 0.2rem;
+  font-family: Sans-Serif;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.content > .box {
+  animation: con 2s linear forwards;
+  padding: 2rem 3rem;
+  text-align: center !important;
+}
+
+@keyframes con {
+  from {
+    transform: translateY(-2000px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 80%;
+  }
+}
+#clock {
+  text-shadow: 0 0 5px #ff3232, 0 0 10px #ff32ff;
+}
+
+#j {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+#m {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#d {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 !important;
+  font-weight: 700;
+  display: block;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.tema {
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.light {
+  transition: all 1s;
+  animation: light 0.5s linear forwards;
+  background-color: #0a0a0a;
+  color: #eee;
+}
+.light > .box {
+  border: 1px solid #777;
+  border-radius: 0.5rem;
+}
+.light > .box > #j {
+  letter-spacing: 0.1px;
+  color: #0096ff;
+}
+.light > .box > button {
+  outline: none;
+  border-radius: 100px;
+  border: 1px solid #0096ff;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  color: #0096ff;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.light > .box > button:hover, .light > .box > button:focus {
+  background-color: #0096ff;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0, 150, 255, 0.5), 0 0 15px #0096ff;
+}
+
+@keyframes light {
+  from {
+    background-color: #0a0a0a;
+    color: #eee;
+  }
+  to {
+    background-color: #f0f5fa;
+    color: #333;
+  }
+}
+.dark {
+  animation: dark 0.5s linear forwards;
+  background-color: #f0f5fa;
+  color: #333;
+}
+.dark > .box {
+  border: 1px solid #777;
+  border-radius: 0.5rem;
+}
+.dark > .box > #j {
+  letter-spacing: 0.1px;
+  color: #0096ff;
+}
+.dark > .box > button {
+  outline: none;
+  border-radius: 100px;
+  border: 1px solid #0096ff;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  color: #0096ff;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.dark > .box > button:hover, .dark > .box > button:focus {
+  background-color: #0096ff;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0, 150, 255, 0.5), 0 0 15px #0096ff;
+}
+
+@keyframes dark {
+  from {
+    background-color: #f0f5fa;
+    color: #333;
+  }
+  to {
+    background-color: #141414;
+    color: #eee;
+  }
+}
+
+/*# sourceMappingURL=kit.css.map */
